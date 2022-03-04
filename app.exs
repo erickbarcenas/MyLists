@@ -24,10 +24,9 @@ defmodule MyLists do
     [{h, h2} | zip(t1, t2)]
   endS
 
-  def zip_with([], [], _), do: []
-  def zip_with([h|t], [h2|t2], fun) do
-    [fun.(h, h2) | zip_with(t, t2, fun)]
-  end
+  def zip_with([], _, _), do: []
+  def zip_with(_, [], _), do: []
+  def zip_with([ h1 | t1 ], [ h2 | t2 ], fun), do: [fun.(h1, h2) | zip_with(t1, t2, fun)]
 
 
 end
