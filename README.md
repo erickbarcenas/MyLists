@@ -28,6 +28,11 @@ iex(17)> MyLists.map([1,2,3,4,5], fn x-> x*2 end)
 
 4. zip/2 
 
+```
+iex> MyLists.zip([a, b, c], [1, 2, 3])
+
+```
+
 5. zip_with/3
 
 
