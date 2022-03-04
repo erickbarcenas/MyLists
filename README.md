@@ -7,6 +7,7 @@ Implementar un Modulo llamado MyLists que tenga las siguientes funciones equival
 iex(1)> c("app.exs")
 [MyLists]
 ```
+## Funciones
 
 1. each/2
 ```elixir
